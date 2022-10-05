@@ -1,0 +1,6 @@
+#  Напишите программу, удаляющую из текста все слова, содержащие ""абв""
+
+word = input("Введите текст:\n")
+word_find = "абв"
+lst = [i for i in word.split() if word_find not in i]
+print(f'Результат: {" ".join(lst)}')
